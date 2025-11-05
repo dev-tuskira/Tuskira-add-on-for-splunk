@@ -1,32 +1,69 @@
 # 🧩 Tuskira Add-on for Splunk
 
+## Latest Version: 1.0.3
+
+Built with UCC Framework 5.69.1
+
+### What's New in v1.0.3
+- ✅ Fixed: Helper files now in correct location for proper execution
+- ✅ Improved: Complete logging for all alert executions
+- ✅ Added: Event count logging and zero-event handling
+- ✅ Enhanced: Better error handling and exception logging
+- ✅ Compatible: Works correctly in digest mode
+
+---
+
 ## Installation Instructions
 
 ### Step 1. Download the App
-Download the latest version of the Splunk Add-on:  
-**`Tuskira-Add-on-for-Splunk-1.0.0.spl`**
+Download the latest version of the Splunk Add-on:
+**`Tuskira-Add-on-for-Splunk-1.0.3.spl`**
 
 ---
 
 ### Step 2. Log in to Splunk Web
-1. Log in to your **Splunk Web UI**.  
+1. Log in to your **Splunk Web UI**.
 2. Navigate to the top menu and select **Apps → Manage Apps**.
 
 ---
 
 ### Step 3. Install the Add-on
-1. Click **Install app from file**.  
-2. Click **Choose File** and select the downloaded file:  
-   **`Tuskira-Add-on-for-Splunk-1.0.0.spl`**  
+1. Click **Install app from file**.
+2. Click **Choose File** and select the downloaded file:
+   **`Tuskira-Add-on-for-Splunk-1.0.3.spl`**
 3. Click **Upload**.
 
 ---
 
 ### Step 4. Confirm Installation
-Once the upload completes, the app will appear in your **Apps** list as  
+Once the upload completes, the app will appear in your **Apps** list as
 **Tuskira Add-on for Splunk**.
 
 ---
 
-✅ **You’re done!**  
-You can now configure your **API URL** and **API Key** under the **Setup** page and begin using the **Adaptive Response Action** to send Splunk notables to **Tuskira**.
+## Configuration
+
+After installation:
+1. Navigate to **Apps → Tuskira Add-on for Splunk**
+2. Click the **Configuration** tab
+3. Enter your **API URL** (e.g., `https://api.tuskira.ai/v2/alerts`)
+4. Enter your **API Key**
+5. Click **Save**
+
+---
+
+## Features
+
+### Alert Actions
+- **Tuskira Alert Action**: Send correlation search results to Tuskira for investigation
+- **Tuskira Adaptive Response Action**: Send Enterprise Security notable events to Tuskira with CAM metadata
+
+### Compatibility
+- Splunk Enterprise 8.x, 9.x
+- Splunk Enterprise Security (optional, for Adaptive Response)
+- Python 3
+
+---
+
+✅ **You're ready!**
+Configure alert actions in your correlation searches or ES notables to send events to Tuskira for automated investigation and enrichment.
